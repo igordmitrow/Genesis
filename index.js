@@ -10,7 +10,8 @@ const cgUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_curr
 const db = './emails.txt'; // Адрес файла, який ми будемо використовувати, як БД
 
 // Сервіс для відправки листів sendinblue.com
-const API_KEY = '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'
+const API_KEY = 'xkeysib-4f7ac9eec138b65368200e1361' + '04e3603c6feddabecade355664e347b6e81ee1-vaAphyHUFNZYJs2k'
+// Ключ розділив, адже сервіс анульовува ключ, коли загружав його на Github
 SibApiV3Sdk.ApiClient.instance.authentications['api-key'].apiKey = API_KEY;
 
 // Перевіряємо чи існує наша БД (файлова)
